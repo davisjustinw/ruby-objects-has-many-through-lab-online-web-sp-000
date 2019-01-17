@@ -12,4 +12,8 @@ class Patient
     @appointments << apt 
     apt
   end
+  
+  def self.all
+    @@all
+  end
 end 
