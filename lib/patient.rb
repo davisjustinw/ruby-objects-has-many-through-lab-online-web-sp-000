@@ -16,4 +16,8 @@ class Patient
   def self.all
     @@all
   end
+  
+  def doctors
+    @appointments.collect { |appointment| appointment.doctor }.uniq
+  end
 end 
