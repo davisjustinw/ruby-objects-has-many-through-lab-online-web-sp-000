@@ -14,6 +14,10 @@ class Doctor
     new_appointment
   end
   
+  def self.all 
+    @@all 
+  end
+  
   def patients
     appointments.collect { |appointment| appoinment.patient }.uniq 
   end 
