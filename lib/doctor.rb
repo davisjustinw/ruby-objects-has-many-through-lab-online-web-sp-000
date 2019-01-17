@@ -19,7 +19,7 @@ class Doctor
   end
   
   def patients
-    appointments.collect { |appointment| appoinment.patient }.uniq 
+    @appointments.collect { |appointment| appointment.patient }.uniq 
   end 
   
 end
